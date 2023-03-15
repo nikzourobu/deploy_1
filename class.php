@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<head>
+	<title>Janielle Myles Ang 12 ict 2</title>
+	<link rel="stylesheet" href="style.css">
+<html>
+<body class="meow">
+
+<?Php 
+	class Person {
+		public $firstname;
+		public $middlename;
+		public $lastname;
+		public $school;
+		public $grade;
+		public $section;
+		public $address;
+		public $birthdate;
+		public $contact;
+		
+		function set_firstname($firstname) {
+			$this->firstname = $firstname;
+		}
+		function get_firstname() {
+			return $this->firstname;
+		}
+		function set_middlename($middlename) {
+			$this->middlename = $middlename;
+		}
+		function get_middlename() {
+			return $this->middlename;
+		}
+		function set_lastname($lastname) {
+			$this->lastname = $lastname;
+		}
+		function get_lastname() {
+			return $this->lastname;
+		}
+			
+		function set_school($school) {
+			$this->school = $school;
+		}
+		function get_school() {
+			return $this->school;
+		}
+		function  set_grade ($grade) {
+			$this->grade = $grade;
+		}
+		function get_grade() {
+			return $this->grade;
+		}
+		function set_section ($section) {
+			$this->section = $section;
+		}
+		function get_section() {
+			return $this->section;
+		}
+		function set_address ($address) {
+			$this->address = $address;
+		}
+		function get_address() {
+			return $this->address;
+		}
+		function set_birthdate ($birthdate) {
+			$this->birthdate = $birthdate;
+		}
+		function get_birthdate() {
+			return $this->birthdate;
+		}
+		function set_contact ($contact) {
+			$this->contact = $contact;
+		}
+		function get_contact() {
+			return $this->contact;
+		}
+	}
+	
+	echo"<br>";
+	$name = new Person();
+	$name-> set_firstname('Janielle Myles');
+	$name-> set_middlename('Bernardo');
+	$name-> set_lastname('Ang');
+	$name->set_school('ECLARO ACADEMY');
+	$name->set_grade('Grade 12');
+	$name->set_section('ICT 2');
+	$name->set_address('brgy. pasong tamo quezon city');
+	$name->set_birthdate('October 26 2004');
+	$name->set_Contact('09554450130');
+	
+	echo "Name: " . $name->get_firstname();
+	echo " " . $name->get_middlename()."<br>";
+	echo " " . $name->get_lastname()."<br>";
+	echo "school: " . $name->get_school()."<br>";
+	echo "grade: " . $name->get_grade()."<br>";
+	echo "section: " . $name->get_section()."<br>";
+	echo "address: " . $name->get_address()."<br>";
+	echo "birthdate: " . $name->get_birthdate()."<br>";
+	echo "contact: " . $name->get_contact()."<br><br>";
+
+
+
+?>
+	
